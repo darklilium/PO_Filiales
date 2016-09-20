@@ -1,0 +1,55 @@
+.wrapper_statistics-summary{
+  background-color: ghostwhite;
+  bottom: 0px;
+  z-index: 4;
+  position: absolute;
+  visibility: hidden;
+  width: auto;
+
+}
+
+.statistics-export-btn{
+    bottom: 1em;
+    left: 1em;
+    z-index: 4;
+    position: absolute;
+}
+.highcharts-stack-labels{
+  visibility: inherit;
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+  .wrapper_statistics-summary{
+    width: auto;
+    height: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait){
+  .wrapper_statistics-summary{
+    width: auto;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape){
+  .wrapper_statistics-summary{
+  width: auto;
+  height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: portrait){
+  .wrapper_statistics-summary{
+  width: auto;
+  height: auto;
+  }
+}
+
+
+@media screen and (min-width: 1280px){
+  .wrapper_statistics-summary{
+  width: 317px;
+  height: 444px;
+  }
+}

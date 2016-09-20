@@ -1,0 +1,173 @@
+$symbology-img:"images/widget_icons/symbology.png";
+* {
+    box-sizing: border-box;
+}
+
+body{
+  height: auto;
+}
+
+//for filiales chq
+.interruptions_chooseFilial{
+  display: flex;
+  position: absolute;
+  right: 1em;
+  top: 3em;
+}
+
+//for loader icon.
+  .loader {
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		z-index: 9999;
+		background: url('images/Preloader_3.gif') 50% 50% no-repeat rgb(249,249,249);
+	}
+
+.esriSimpleSliderTL {
+    top: 4em;
+    visibility: hidden;
+}
+
+.interruptions__wrapper{
+  width: 100%;
+  height: 100%;
+}
+
+.map_div{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  padding-top: 1.7em;
+  position: fixed;
+}
+
+.interruptions__header{
+  width: 100%;
+  margin-top: 0.1em;
+  padding: 0;
+  height: 1.6em;
+  background-color: ghostwhite;
+  z-index: 4;
+  position: fixed;
+}
+.interruptions__symbology{
+content: url($symbology-img);
+}
+// screens for less than 1024px
+@media screen and (max-width: 1024px ) {
+  .interruptions__symbology-img{
+    width: 2.8em;
+    height: auto;
+    margin-left: 0em;
+
+  }
+
+  .interruptions__symbology{
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: screen;
+    bottom: 0;
+    z-index: 3;
+    padding: 1em;
+    position: absolute;
+  }
+}
+
+/*screens for more than 1024px*/
+@media screen and (min-width: 1024px) {
+/*  .interruptions__symbology-img{
+    width: 3em;
+    height: auto;
+    margin-left: 0em;
+  }
+*/
+  .interruptions__symbology{
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-blend-mode: screen;
+    bottom: 0;
+    z-index: 3;
+    padding: 1em;
+    position: absolute;
+  }
+
+}
+//0 to 480px
+@media screen and (max-width: 480px) and (orientation: portrait){
+  .interruptions__symbology{
+    width: 6em;
+  }
+
+
+}
+
+@media screen and (max-width: 480px) and (orientation: landscape){
+  .interruptions__symbology{
+    width: 4.8em;
+  }
+
+}
+
+// 481 to 640 px
+@media screen and (min-width: 481px) and (max-width: 640px) and (orientation: portrait){
+  .interruptions__symbology{
+    width: 6em;
+  }
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) and (orientation: landscape){
+  .interruptions__symbology{
+    width: 4.8em;
+  }
+
+}
+
+//641 to 736
+@media screen and (min-width: 641px) and (max-width: 736px) and (orientation: portrait){
+  .interruptions__symbology{
+    width: 6em;
+  }
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 736px) and (orientation: landscape){
+  .interruptions__symbology{
+    width: 4.8em;
+  }
+
+}
+
+//737px to 800px
+@media screen and (min-width: 737px) and (max-width: 800px) and (orientation: portrait){
+  .interruptions__symbology{
+    width: 6em;
+  }
+
+
+}
+
+@media screen and (min-width: 737px) and (max-width: 800px) and (orientation: landscape){
+  .interruptions__symbology{
+      width: 6em;
+  }
+
+}
+
+@import "components/searchbar-component";
+@import "components/statistics";
+@import "components/statistics_summary-comp";
+@import "components/griddlegrid-component";
+@import "components/layerlist-component";
